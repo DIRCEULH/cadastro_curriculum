@@ -1,0 +1,331 @@
+*{
+	margin:0; padding:0;
+}
+
+html {
+
+	height:100%;
+
+	background:linear-gradient(rgba(38,128,101,0.9),rgba(38,128,101,0.9));
+
+	/*rgba(52,177,140,0.9)	*/
+}
+
+body {
+	
+	font-family:'Trebuchet MS',tahoma,arial;
+}
+
+#formulario {
+width:500px;
+margin:50px auto;
+text-align: center;
+position : relative;
+
+	
+}
+#formulario h1{
+	font:15px 'Trebuchet MS',tahoma,arial;
+	color:#090;
+	width:100%;
+	float:left;	
+	text-align:left;
+	margin-bottom:%;	
+	
+}
+#formulario h2,#formulario h3{
+	font:22px 'Trebuchet MS',tahoma,arial;
+	color:#090;
+	width:100%;
+	float:left;	
+	text-align:left;
+	margin-bottom:5%;
+	
+	
+}
+
+#formulario h3{
+	
+	color:#333;
+	font-size:17px;
+	
+}
+#formulario fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	box-shadow:0 0 15px rgba(0,0,0,0.4);
+	padding : 20px 30px;
+	
+	box-sizing: border-box;
+	width:150%;
+	margin:0px -20%;
+	position:absolute;
+}
+
+
+
+#formulario fieldset:not(:first-of-type) {
+	display: none;
+	
+}
+
+#formulario input,select, #formulario  textarea{
+	padding:10px;
+	border: 1px solid rgba(38,128,101,0.9);
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	outline:none;
+	box-sizing: border-box;	
+	width:100%;
+	font:14px 'Trebuchet MS',tahoma,arial;
+	color:#090;
+	margin-bottom:5px ;
+	
+}
+
+#formulario .acao{
+width:100px;
+background:rgba(38,128,101,0.9);	
+color:white;
+text-transform:uppercase;
+font-weight:bold;
+padding:12px 0;
+float:center-left;	
+
+}
+
+
+	
+#formulario .acao:hover{background:rgba(52,177,140,0.9);
+cursor:pointer;
+
+}
+
+
+
+#formulario #progress{
+	
+	margin-bottom : 35px;
+	margin-left : -165px;
+	overflow:hidden;
+	counter-reset: step;
+	width:880px;
+	
+	
+	
+}
+#formulario #progress li{
+	
+	list-style-type:none;
+	color:white;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:10px;
+	float:left;
+
+	width:25%;
+	position:relative;
+	
+}	
+#formulario #progress li:before{	
+content:counter(step);
+counter-increment:step;
+width: 40px;
+display:block;
+line-height:20px;
+background:white;
+color:#333;
+border-radius:10px;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+
+margin:0 auto 10px auto;
+
+}
+
+
+#formulario #progress li:after{	
+
+content:'';
+counter-increment:(step);
+width: 100%;
+height:2px;
+background:white;
+position:absolute;
+top:9px;
+left:-50%;
+z-index:-1;
+}
+
+#formulario #progress li:first-child:after{	
+
+content:none;
+
+
+}
+
+
+#formulario #progress li.ativo:before, #formulario #progress li.ativo:after{		
+	
+	background:rgba(40,208,141,0.9);
+	color:white;
+	text-shadow:0 1px 0 ;
+}
+
+
+#mensagem {
+	background:rgba(40,208,141,0.9);
+	border: 0 none;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	box-shadow:0 0 15px rgba(0,0,0,0.4);
+	padding : 20px 30px;
+	
+	box-sizing: border-box;
+	width:20%;
+	margin:0px 80%;
+	position:absolute;
+	
+}
+
+
+#table{
+	background: white;
+	border: 0 none;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;	
+	box-shadow:0 0 15px rgba(0,0,0,0.4);
+	padding : 20px 30px;
+	box-sizing: border-box;
+	width:100%;
+	margin:0px 0%;
+	position:absolute;
+}
+
+
+#table, th, td {
+	padding:10px;
+	border: 2px solid rgba(38,128,101,0.9);
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	outline:none;
+	box-sizing: border-box;	
+
+	font:14px 'Trebuchet MS',tahoma,arial;
+    color:#090;
+	
+}
+
+#pesquisa {
+	background: white;
+	border: 2 none;
+	border-radius: 5px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;	
+	box-shadow:0 0 20px rgba(0,0,0,0.4);
+	padding : 25px 25px;
+	box-sizing: border-box;
+	width:100%;
+	margin:2px 0%;
+
+	
+	
+}
+#pesquisa input{
+	padding:10px;
+	border: 2px solid rgba(38,128,101,0.9);
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+
+	box-sizing: border-box;	
+	width:35%;
+	font:14px 'Trebuchet MS',tahoma,arial;
+	color:#090;
+	margin-bottom:5px ;
+}
+
+#pesquisa h2{
+	font:22px 'Trebuchet MS',tahoma,arial;
+	color:#090;
+	width:100%;
+	float:left;	
+	text-align:left;
+	margin-bottom:2px;
+}
+
+#pesquisa .pesq{
+width:100px;
+background:rgba(38,128,101,0.9);	
+color:white;
+text-transform:uppercase;
+font-weight:bold;
+padding:10px 0;
+float:center-left;		
+
+}
+
+#table .excluir{
+width:100%;
+background:rgba(38,128,101,0.9);	
+color:red;
+text-transform:uppercase;
+font-weight:bold;
+padding:6px 0;
+float:center-left;		
+
+}
+#table .ver{
+width:100%;
+background:rgba(38,128,101,0.9);	
+color:white;
+text-transform:uppercase;
+font-weight:bold;
+padding:6px 0;
+float:center-left;		
+
+}
+
+
+#menu ul {
+	position:fixed;
+	top:0px;
+	width: 100%;
+    padding:0px;
+    margin:0px;
+    background-color:#ffffff;
+    list-style:none;
+	box-shadow:0 0 15px rgba(0,0,0,0.4);
+	z-index: 999;
+
+}
+
+
+#menu ul li { display: inline ;}
+
+#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block ;
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
+    /* visual do link */
+    background-color:#EDEDED;
+    color:#090;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+	
+}
+#menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #090;
+    border-bottom:3px solid #090;
+	
+}
