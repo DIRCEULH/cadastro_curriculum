@@ -5,7 +5,7 @@ _______________Funcionalidades_________________
 Opção de anexo imagem e anexo a pdf,docx
 
 ______________________________________
-Link acesso: http://dirceuluis.esy.es/cadastro_curriculum/
+Link acesso: http://dirceuluis.esy.es/Cadastro_curriculum/
 Programador : Dirceu Luis Heineck
 Email: dirceulh@hotmail.com
 
